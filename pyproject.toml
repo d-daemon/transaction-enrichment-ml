@@ -1,0 +1,46 @@
+[project]
+name = "transaction-enrichment-ml"
+version = "0.1.0"
+description = "End-to-end machine learning pipeline for merchant brand classification and transaction enrichment, including synthetic data generation, vectorization experiments, and a Streamlit dashboard."
+authors = [
+    { name = "d-daemon" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["machine-learning", "nlp", "banking", "classification", "streamlit", "data-engineering"]
+dependencies = [
+    "faker>=37.8.0",
+    "joblib>=1.5.2",
+    "matplotlib>=3.10.6",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "streamlit>=1.50.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4",         # Linter
+    "pytest>=8.0",       # Testing
+    "ipython>=8.0",      # Dev convenience
+    "black>=24.0",       # Formatter
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+select = ["E", "F", "I"]   # Basic linting rules: errors, pyflakes, import sorting
+ignore = ["E501"]         # Ignore long lines
+exclude = ["data", "models", "output", ".venv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[tool.streamlit]
+browser.gatherUsageStats = false
+server.headless = true

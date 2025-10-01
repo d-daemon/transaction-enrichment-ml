@@ -1,0 +1,36 @@
+title: Transaction Enrichment & Brand Classification
+theme: minimal
+logo: /assets/logo.png
+markdown: kramdown
+
+# Sidebar navigation
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - index.md
+  - getting-started.md
+  - architecture.md
+  - vectorization.md
+  - resources.md
+
+# Order of pages in sidebar
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        - title: Home
+          url: index.md
+        - title: Getting Started
+          url: getting-started.md
+        - title: Architecture
+          url: architecture.md
+        - title: Vectorization
+          url: vectorization.md
+        - title: Resources
+          url: resources.md
