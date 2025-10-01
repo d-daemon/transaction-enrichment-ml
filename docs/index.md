@@ -5,7 +5,7 @@ This project demonstrates how to classify noisy merchant text into **brands** an
 
 Use the sidebar to navigate through:
 
-- **Getting Started** – set up and run the project
-- **Architecture** – end-to-end pipeline overview
-- **Vectorization** – methods and accuracy results
-- **Resources** – links to the whitepaper and repo
+- **[Getting Started](getting-started.md)** – set up and run the project
+- **[Architecture](architecture.md)** – end-to-end pipeline overview
+- **[Vectorization](vectorization.md)** – methods and accuracy results
+- **[Resources](resources.md)** – links to the whitepaper and repo

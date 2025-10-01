@@ -10,6 +10,4 @@ The pipeline consists of:
 5. **Batch Categorization**  
 6. **Streamlit Dashboard**
 
-![Architecture Diagram](https://raw.githubusercontent.com/github/explore/main/topics/machine-learning/machine-learning.png)
-
 Next: [Vectorization →](vectorization.md)
