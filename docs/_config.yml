@@ -1,10 +1,10 @@
-title: Transaction Enrichment & Brand Classification
-theme: minimal
-logo: /assets/logo.png
+title: [Transaction Enrichment & Brand Classification]
+remote_theme: pages-themes/minimal@v0.2.0
 markdown: kramdown
 
 # Sidebar navigation
 plugins:
+  - jekyll-remote-theme
   - jekyll-relative-links
 
 relative_links:
