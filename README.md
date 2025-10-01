@@ -10,23 +10,23 @@
 ![Repo Stars](https://img.shields.io/github/stars/d-daemon/transaction-enrichment-ml?style=social)
 ![Repo Forks](https://img.shields.io/github/forks/d-daemon/transaction-enrichment-ml?style=social)
 
-This repository demonstrates a complete **end-to-end machine learning pipeline** for enriching banking transactions by:
+[![Open Site](https://img.shields.io/badge/GitHub%20Pages-Open%20Site-blue?style=for-the-badge)](https://d-daemon.github.io/transaction-enrichment-ml/)
+
+This PoC demonstrates a complete **end-to-end machine learning pipeline** for enriching banking transactions by:
 
 - Assigning **brand labels** from noisy merchant strings
 - Classifying transactions into **industry hierarchies**
 - Providing **interactive visualization** and exploration through a Streamlit dashboard
-
-The project is designed to highlight advanced ML skills, data engineering practices, and practical production-style techniques — making it an excellent PoC for portfolio and hiring showcases.
 
 ---
 
 ## Features
 
 - **Synthetic data generator** for merchant + transaction data  
-- **Text cleaning & normalization** for real-world merchant strings  
-- **Brand classification** using calibrated ML models (character n-gram TF-IDF + Logistic Regression)  
-- **Industry classification** using brand + MCC code  
-- **Vectorization strategy comparison** (word, char n-gram, embeddings, transformers)  
+- **Text cleaning & normalization** for real-world merchant strings
+- **Brand classification** using calibrated ML models(character n-gram TF-IDF + Logistic Regression)
+- **Industry classification** using brand + MCC code
+- **Vectorization strategy comparison** (word, char n-gram, embeddings, transformers)
 - **Streamlit dashboard** with:
   - Free-text top-K brand prediction
   - Interactive confidence threshold control
@@ -37,18 +37,18 @@ The project is designed to highlight advanced ML skills, data engineering practi
 ## Project Structure
 
 ```
-txn_enrichment/
-├── data/   # Synthetic data and training datasets
-├── models/ # Saved ML models
-├── output/ # Enriched CSV outputs
+transaction-enrichment-ml/
+├── data/    # Synthetic data and training datasets
+├── models/  # Saved ML models
+├── output/  # Enriched CSV outputs
 ├── scripts/
-│ ├── generate_synthetic_data_with_labels.py
-│ ├── train_brand_classifier.py
+│   ├── generate_synthetic_data_with_labels.py
+│   └── train_brand_classifier.py
 ├── src/
-│ ├── brand_matcher.py
-│ ├── industry_classifier.py
-├── categorize_transactions.py # Batch categorization pipeline
-├── app.py # Streamlit dashboard
+│   ├── brand_matcher.py
+│   └── industry_classifier.py
+├── categorize_transactions.py   # Batch categorization pipeline
+├── app.py   # Streamlit dashboard
 └── README.md
 ```
 
