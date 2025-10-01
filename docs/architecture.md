@@ -1,4 +1,3 @@
-
 # End-to-End Architecture
 
 The pipeline consists of:
@@ -10,4 +9,4 @@ The pipeline consists of:
 5. **Batch Categorization**  
 6. **Streamlit Dashboard**
 
-Next: [Vectorization →](vectorization.md)
+[← Getting Started](getting-started.md) | [Home](index.md) | [Vectorization →](vectorization.md)

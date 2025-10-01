@@ -36,4 +36,4 @@ uv run streamlit run app.py
 
 Open http://localhost:8501.
 
-Next [Architecture →](architecture.md)
+| [Home](index.md) | [Architecture →](architecture.md)

@@ -9,4 +9,4 @@
 
 **Chosen Method:** Character n-gram TF-IDF (3–5) + Logistic Regression + Isotonic calibration.
 
-👉 Next: [Resources →](resources.md)
+[← Architecture](architecture.md) | [Home](index.md) | [Resources →](resources.md)
